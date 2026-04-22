@@ -14,6 +14,10 @@ The temple only opens for teams who collected every clue and worked together.
 6. Push your work
 7. Open a pull request
 
-Your pull request title must include your team’s name.
+Your pull request title must start with:
+`Team: <your team name>`
+
+Example:
+`Team: Temple Raiders`
 
 Only the correct phrase will unlock the treasure.
