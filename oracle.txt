@@ -1,0 +1,22 @@
+The restored oracle lists the relics found in the chamber.
+
+Relics:
+TORCH
+MASK
+EMERALD
+KEY
+RELIC
+TABLET
+CHARM
+COIN
+
+Only four belong to the final inscription.
+
+Use the clues below to determine which four matter.
+
+Then take the first letter of each chosen relic in order.
+
+3. The relic worn for protection, not decoration.
+4. The relic carried where light is needed most.
+
+The temple does not always reveal its truth in the order it is found.
