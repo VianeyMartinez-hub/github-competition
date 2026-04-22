@@ -1,0 +1,91 @@
+name: Competition Check
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  validate-submission:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out PR code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Validate submission
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          echo "Running GitHub Competition checks..."
+
+          failed=0
+
+          echo ""
+          echo "1. Checking revealed.txt exists..."
+          if [ ! -f "revealed.txt" ]; then
+            echo "revealed.txt is missing."
+            failed=1
+          else
+            echo "revealed.txt found."
+          fi
+
+          echo ""
+          echo "2. Checking treasure.txt exists..."
+          if [ ! -f "treasure.txt" ]; then
+            echo "treasure.txt is missing."
+            failed=1
+          else
+            echo "treasure.txt found."
+          fi
+
+          echo ""
+          echo "3. Checking treasure.txt contains the correct final phrase..."
+          if [ -f "treasure.txt" ]; then
+            phrase=$(tr -d '\r' < treasure.txt | sed 's/[[:space:]]*$//')
+            if [ "$phrase" != "THE TREASURE IS TEAMWORK" ]; then
+              echo "treasure.txt does not contain the correct final phrase."
+              echo "Found: '$phrase'"
+              failed=1
+            else
+              echo "Final phrase is correct."
+            fi
+          fi
+
+          echo ""
+          echo "4. Checking oracle.txt has no merge conflict markers..."
+          if [ ! -f "oracle.txt" ]; then
+            echo "oracle.txt is missing."
+            failed=1
+          else
+            if grep -Eq '<<<<<<<|=======|>>>>>>>' oracle.txt; then
+              echo "oracle.txt still contains merge conflict markers."
+              failed=1
+            else
+              echo "oracle.txt has no merge conflict markers."
+            fi
+          fi
+
+          echo ""
+          echo "5. Checking PR title format..."
+          if [[ "$PR_TITLE" != Team:* ]]; then
+            echo "PR title must start with: Team:"
+            echo "Example: Team: Temple Raiders"
+            failed=1
+          else
+            echo "PR title format is valid."
+          fi
+
+          echo ""
+          if [ "$failed" -ne 0 ]; then
+            echo "One or more checks failed."
+            exit 1
+          fi
+
+          echo "All checks passed."
