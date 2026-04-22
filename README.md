@@ -14,15 +14,14 @@ Your competition starts at: `temple-entrance`
 
 Branch path:
 
-`main`
-└── `temple-entrance`
-    └── `chamber-of-secrets`
-        └── `fork-in-the-path`
-            ├── `path-of-light`
-            └── `path-of-shadows`
-                 ↘
-                  `temple-core`
-                      └── `hidden-treasure`
+main → temple-entrance → chamber-of-secrets → fork-in-the-path
+
+From `fork-in-the-path`, complete both:
+- `path-of-light`
+- `path-of-shadows`
+
+After completing both paths, continue to:
+`temple-core` → `hidden-treasure`
                       
 ## How to Use This Repository
 
