@@ -1,2 +1,19 @@
-# github-competition
-Maze-style GitHub competition for beginners to practice branches, commits, merges, and pull requests.
+# Hidden Treasure
+
+You made it.
+
+The temple only opens for teams who collected every clue and worked together.
+
+## Final Task
+
+1. Open `final.txt`
+2. Solve the puzzle to find the final word
+3. Combine all your clue words (order matters)
+4. Create a file named `treasure.txt`
+5. Write the final phrase
+6. Push your work
+7. Open a pull request
+
+Your pull request title must include your team’s name.
+
+Only the correct phrase will unlock the treasure.
