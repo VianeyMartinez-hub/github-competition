@@ -29,12 +29,42 @@ Follow these steps as you progress:
 
 ---
 
+## Viewing Files
+
+You can open and read files either:
+- in your code editor (such as VS Code), or
+- directly on GitHub in your browser
+
+Use whichever is easier for your team.
+
+---
+
+## Making Changes
+
+When you make changes to files, remember to run:
+
+git add .
+git commit -m "your message"
+git push
+
+This ensures your progress is saved.
+
+---
+
 ## Important Notes
 
 - Complete all checkpoints in order. Do not skip steps.
 - Keep track of every clue word your team finds.
 - Make sure all team members take turns using the keyboard.
 - If you feel stuck, re-read the README and check all files in the branch.
+
+---
+
+## If You Get Stuck
+
+- Re-read the README carefully
+- Check all files in the branch
+- Ask an officer for help if needed
 
 ---
 
