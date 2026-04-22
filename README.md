@@ -38,13 +38,12 @@ Follow these steps as you progress:
 
 5. Once you finish the task, move to the next branch as instructed.
 
-## Viewing Files
+## Accessing Files
 
-You can open and read files either:
-- in your code editor (such as VS Code), or
-- directly on GitHub in your browser
+You will use both the terminal and GitHub throughout the competition.
 
-Use whichever is easier for your team.
+- Use the terminal to switch branches and make changes  
+- Use GitHub or your code editor (such as VS Code) to open files, read instructions, and solve puzzles
 
 ## Making Changes
 
