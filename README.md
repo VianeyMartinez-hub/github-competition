@@ -14,7 +14,7 @@ Your competition starts at: `temple-entrance`
 
 Branch path:
 
-main → temple-entrance → chamber-of-secrets → fork-in-the-path
+`main` → `temple-entrance` → `chamber-of-secrets` → `fork-in-the-path`
 
 From `fork-in-the-path`, complete both:
 - `path-of-light`
