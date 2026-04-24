@@ -5,11 +5,11 @@ The temple’s last inscription was not written in words.
 It is known from an early age,
 a sequence most learn before anything else.
 
-Within this set, the final clue is hidden:
+But this time, the temple asks you to look at it in a different perspective.
 
-23
-15
-18
-11
+The final clue is hidden:
 
-Find what they spell.
+4
+12
+9
+16
