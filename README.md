@@ -28,4 +28,4 @@ Extract your answer.
 
 Once you have your answer, continue to:
 
-hidden-treasure
+`hidden-treasure`
