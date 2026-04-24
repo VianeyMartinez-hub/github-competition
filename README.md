@@ -25,3 +25,7 @@ After resolving the conflict, open `oracle.txt`.
 Use all the clues to determine the correct relics.
 
 Extract your answer.
+
+Once you have your answer, continue to:
+
+hidden-treasure
