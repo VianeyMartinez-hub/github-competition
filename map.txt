@@ -1,13 +1,19 @@
 The temple doors open.
 
-The first inscription appears scrambled:
+The first inscription is hidden in three temple words.
 
-E T H
+Each word hides one letter from the first clue.
 
-Rearrange the letters to reveal your first clue.
+Find the hidden letter from each word in order:
+
+1. RELIC
+2. ASHEN
+3. TOMB
+
+The letters will reveal your first clue.
 
 The answer is a common word that begins many discoveries.
 
-To move forward, travel to:
+Once you find it, travel to:
 
 chamber-of-secrets
