@@ -20,4 +20,4 @@ Your pull request title must start with:
 Example:
 `Team: Temple Raiders`
 
-Only the correct phrase will unlock the treasure.
+Only the correct phrase will unlock the treasure. Make sure it's in all CAPS!
